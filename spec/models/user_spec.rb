@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  it 'returns the user with token' do
+  xit 'returns the user with token' do
     token = ENV['github_user_token']
     user = GithubService.user_by(token)
 # binding.pry
