@@ -12,5 +12,4 @@ describe GithubService do
       expect(user).to have_key(:following)
     end
   end
-
 end
