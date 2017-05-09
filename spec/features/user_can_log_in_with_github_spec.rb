@@ -33,10 +33,10 @@ RSpec.feature 'User can log in with github' do
 
       click_link('Login with Github')
 
-      expect(current_path).to eq user_path(User.last)
+      expect(current_path).to eq dashboard_index_path
 
-      expect(page.body).to have_content 'Welcome, POODR!'
-      expect(page.body).to have_link 'Logout'
+      expect(page.body).to have_content("You've made it whatever")
+      expect(page.body).to have_link('Logout')
     end
   end
 end
