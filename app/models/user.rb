@@ -11,5 +11,6 @@ class User < ApplicationRecord
 
     user.save
     user
+    # binding.pry
   end
 end
