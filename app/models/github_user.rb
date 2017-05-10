@@ -22,6 +22,10 @@ class GithubUser
     attrs[:public_repos]
   end
 
+  def self.starred(token)
+    GithubService.starred_by(token)
+  end
+
   private
   attr_reader :attrs
 end

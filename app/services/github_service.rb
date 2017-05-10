@@ -15,6 +15,17 @@ class GithubService
     service.user
   end
 
+  def starred
+    response = conn.get("/user/starred?access_token=#{token}")
+    JSON.parse(response.body, symbolize_names: true)
+  end
+
+
+  def self.starred_by(token)
+    service = GithubService.new(token)
+    service.starred
+  end
+
   private
   attr_reader :token
 
