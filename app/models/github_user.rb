@@ -34,6 +34,10 @@ class GithubUser
     GithubService.find_repos(token)
   end
 
+  def repos(token)
+    Repo.repos(token)
+  end
+
   private
   attr_reader :attrs
 end

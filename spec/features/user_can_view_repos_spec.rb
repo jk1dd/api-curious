@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.feature 'User can see repos' do
   context 'as an existing user with valid creds' do
     scenario 'user is on her repos page' do
-      VCR.use_cassette('view_followers') do
+      VCR.use_cassette('view_repos') do
         Capybara.app = ApiCurious::Application
         stub_omniauth
 
@@ -21,7 +21,7 @@ RSpec.feature 'User can see repos' do
 
         within('.repos-list') do
           expect(page).to have_content("archived_black_thursday")
-          expect(page).to have_link("https://github.com/dianawhalen/archived_black_thursday")
+          expect(page).to have_link("See Repo")
         end
       end
     end
