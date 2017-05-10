@@ -4,9 +4,7 @@ You've made it <%= current_user.nickname %><br>
 Name: <%= current_user.name %><br>
 Image: <%= image_tag(current_user.image) %>
 
-<%# @repos.each do |repo| %>
-<%#= repo[:name] %><br>
-<%# end %>
+
 <%= link_to "See Followers", followers_path %>
 <%= link_to "See Following", following_index_path %>
 <%= link_to "See Repos", repos_path %>
