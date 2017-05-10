@@ -33,4 +33,22 @@ describe GithubService do
       end
     end
   end
+
+  context '.following' do
+    it 'returns following for a given user' do
+      VCR.use_cassette('.following') do
+        token = ENV['github_user_token']
+        following = GithubService.following(token)
+
+        expect(following).to be_an(Array)
+        expect(following.count).to eq(27)
+
+        one_following = following.first
+
+        expect(one_following).to be_a(Hash)
+        expect(one_following).to have_key(:login)
+        expect(one_following).to have_key(:avatar_url)
+      end
+    end
+  end
 end

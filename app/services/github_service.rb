@@ -40,9 +40,20 @@ class GithubService
     response = conn.get("/user/repos?access_token=#{token}")
     JSON.parse(response.body, symbolize_names: true)
   end
+
   def self.find_repos(token)
     service = GithubService.new(token)
     service.find_repos
+  end
+
+  def following
+    response = conn.get("/user/following?access_token=#{token}")
+    tuff = JSON.parse(response.body, symbolize_names: true)
+  end
+
+  def self.following(token)
+    service = GithubService.new(token)
+    service.following
   end
 
   private
