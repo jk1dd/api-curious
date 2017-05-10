@@ -26,6 +26,10 @@ class GithubUser
     GithubService.starred_by(token)
   end
 
+  def self.followers(token)
+    GithubService.followers(token)
+  end
+
   private
   attr_reader :attrs
 end

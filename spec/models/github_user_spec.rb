@@ -19,11 +19,11 @@ describe GithubUser do
     expect(github_user_starred.count).to eq(1)
   end
 
-  # it 'returns a users followers' do
-  #   token = ENV['github_user_token']
-  #   github_user_followers = GithubUser.followers(token)
-  #
-  #   expect(github_user_followers).to be_an(Array)
-  #   expect(github_user_followers.count).to eq(3)
-  # end
+  it 'returns a users followers' do
+    token = ENV['github_user_token']
+    github_user_followers = GithubUser.followers(token)
+# binding.pry
+    expect(github_user_followers).to be_an(Array)
+    expect(github_user_followers.count).to eq(5)
+  end
 end

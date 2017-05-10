@@ -26,6 +26,16 @@ class GithubService
     service.starred
   end
 
+  def followers
+    response = conn.get("/user/followers?access_token=#{token}")
+    JSON.parse(response.body, symbolize_names: true)
+  end
+
+  def self.followers(token)
+    service = GithubService.new(token)
+    service.followers
+  end
+
   private
   attr_reader :token
 
