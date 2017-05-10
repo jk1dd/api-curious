@@ -21,6 +21,7 @@ RSpec.feature 'User can see repos' do
 
         within('.repos-list') do
           expect(page).to have_content("archived_black_thursday")
+          expect(page).to have_link("https://github.com/dianawhalen/archived_black_thursday")
         end
       end
     end

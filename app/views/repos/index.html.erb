@@ -1,6 +1,6 @@
 <div class="repos-list">
   <% @repos.each do |repo| %>
   <p><%= repo[:name] %></p>
-  <p><%= repo[:html_url] %></p>
+  <p><%= link_to(repo[:html_url]) %></p>
   <% end %>
 </div>
