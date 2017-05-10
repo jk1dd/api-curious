@@ -26,4 +26,12 @@ describe GithubUser do
     expect(github_user_followers).to be_an(Array)
     expect(github_user_followers.count).to eq(5)
   end
+
+  it 'returns a users repos' do
+    token = ENV['github_user_token']
+    github_user_repos = GithubUser.repos(token)
+# binding.pry
+    expect(github_user_repos).to be_an(Array)
+    expect(github_user_repos.count).to eq(30)
+  end
 end

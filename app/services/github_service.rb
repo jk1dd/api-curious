@@ -36,6 +36,15 @@ class GithubService
     service.followers
   end
 
+  def find_repos
+    response = conn.get("/user/repos?access_token=#{token}")
+    JSON.parse(response.body, symbolize_names: true)
+  end
+  def self.find_repos(token)
+    service = GithubService.new(token)
+    service.find_repos
+  end
+
   private
   attr_reader :token
 

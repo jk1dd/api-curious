@@ -30,6 +30,10 @@ class GithubUser
     GithubService.followers(token)
   end
 
+  def self.repos(token)
+    GithubService.find_repos(token)
+  end
+
   private
   attr_reader :attrs
 end
