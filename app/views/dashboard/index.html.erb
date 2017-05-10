@@ -1,3 +1,7 @@
 You've made it <%= current_user.nickname %>
 <%= image_tag(current_user.image) %>
 <%= link_to "Logout", logout_path, method: :delete %>
+
+<% @repos.each do |repo| %>
+<%= repo[:name] %>
+<% end %>
