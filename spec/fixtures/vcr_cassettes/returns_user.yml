@@ -1,0 +1,80 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.github.com/user?access_token=<GITHUB_USER_TOKEN>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.11.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Wed, 10 May 2017 19:39:23 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4997'
+      X-Ratelimit-Reset:
+      - '1494446989'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      - Accept-Encoding
+      Etag:
+      - W/"056ce2fa76642825189aadafdab2a781"
+      Last-Modified:
+      - Mon, 08 May 2017 16:39:53 GMT
+      X-Oauth-Scopes:
+      - ''
+      X-Accepted-Oauth-Scopes:
+      - ''
+      X-Oauth-Client-Id:
+      - "<GITHUB_CLIENT_ID>"
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Served-By:
+      - 02ea60dfed58b2a09106fafd6ca0c108
+      X-Github-Request-Id:
+      - E7B9:3FFB:73C72C5:9032950:59136C6A
+    body:
+      encoding: ASCII-8BIT
+      string: '{"login":"jk1dd","id":20495477,"avatar_url":"https://avatars2.githubusercontent.com/u/20495477?v=3","gravatar_id":"","url":"https://api.github.com/users/jk1dd","html_url":"https://github.com/jk1dd","followers_url":"https://api.github.com/users/jk1dd/followers","following_url":"https://api.github.com/users/jk1dd/following{/other_user}","gists_url":"https://api.github.com/users/jk1dd/gists{/gist_id}","starred_url":"https://api.github.com/users/jk1dd/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/jk1dd/subscriptions","organizations_url":"https://api.github.com/users/jk1dd/orgs","repos_url":"https://api.github.com/users/jk1dd/repos","events_url":"https://api.github.com/users/jk1dd/events{/privacy}","received_events_url":"https://api.github.com/users/jk1dd/received_events","type":"User","site_admin":false,"name":"Jonathan
+        Kidd","company":"@turingschool","blog":"","location":"Denver, CO","email":"kidd.jonathan.j@gmail.com","hireable":true,"bio":"Back-End
+        Engineering Student at Turing School of Software and Design.","public_repos":34,"public_gists":14,"followers":5,"following":27,"created_at":"2016-07-16T23:05:21Z","updated_at":"2017-05-08T16:39:53Z"}'
+    http_version: 
+  recorded_at: Wed, 10 May 2017 19:39:22 GMT
+recorded_with: VCR 3.0.3

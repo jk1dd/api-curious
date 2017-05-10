@@ -5,6 +5,14 @@ require File.expand_path('../../config/environment', __FILE__)
 abort("The Rails environment is running in production mode!") if Rails.env.production?
 require 'spec_helper'
 require 'rspec/rails'
+
+VCR.configure do |config|
+  config.cassette_library_dir = "spec/fixtures/vcr_cassettes"
+  config.hook_into :webmock
+  config.filter_sensitive_data('<GITHUB_CLIENT_ID>') { ENV['github_client_id'] }
+  config.filter_sensitive_data('<GITHUB_CLIENT_SECRET>') { ENV['github_client_secret'] }
+  config.filter_sensitive_data('<GITHUB_USER_TOKEN>') { ENV['github_user_token'] }
+end
 # Add additional requires below this line. Rails is not loaded until this point!
 
 # Requires supporting ruby files with custom matchers and macros, etc, in
@@ -54,4 +62,38 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
+end
+
+def stub_omniauth
+  OmniAuth.config.test_mode = true
+  OmniAuth.config.mock_auth[:github] = OmniAuth::AuthHash.new({
+    provider: 'github',
+    uid: '6856935',
+    info: {
+    name: "Jonathan Kidd",
+    nickname: "jk1dd",
+    image: 'http://wallpaper-gallery.net/images/random-image/random-image-4.jpg',
+      },
+    credentials: {
+    token: ENV['github_user_token']
+      }
+    })
+end
+
+def stub_oauth
+  OmniAuth.config.test_mode = true
+
+  OmniAuth.config.mock_auth[:github] = OmniAuth::AuthHash.new({
+                                       provider: 'github',
+                                       uid: '12345678',
+                                       info: {
+                                        nickname: 'whatever',
+                                        email: 'whatever@whatever.com',
+                                        name: 'Whatevery McWhatever',
+                                        image: 'http://wallpaper-gallery.net/images/random-image/random-image-4.jpg',
+                                       },
+                                       credentials: {
+                                         token: 'lwkerkjle'
+                                       }
+  })
 end
