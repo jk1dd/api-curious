@@ -1,0 +1,6 @@
+<div class="my-commits">
+  <% @my_commits.each do |commit|  %>
+  <p><%= commit.commit_id %></p>
+  <p><%= commit.message %></p>
+  <% end %>
+</div>

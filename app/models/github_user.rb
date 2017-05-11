@@ -67,6 +67,10 @@ class GithubUser
     end
   end
 
+  def commits_performed(token, nickname)
+    Commit.commits(token, nickname)
+  end
+
   private
   attr_reader :attrs
 end
