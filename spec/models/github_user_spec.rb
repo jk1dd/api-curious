@@ -15,10 +15,11 @@ describe GithubUser do
   it 'returns a users starred' do
     VCR.use_cassette('starred_repos') do
       token = ENV['github_user_token']
-      github_user_starred = GithubUser.starred(token)
+      github_user = GithubUser.find(token)
+      starred = github_user.starred_repos(token)
 
-      expect(github_user_starred).to be_an(Array)
-      expect(github_user_starred.count).to eq(1)
+      expect(starred).to be_an(Array)
+      expect(starred.count).to eq(1)
     end
   end
 

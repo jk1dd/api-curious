@@ -22,9 +22,9 @@ class GithubUser
     attrs[:public_repos]
   end
 
-  def self.starred(token)
-    GithubService.starred_by(token)
-  end
+  # def self.starred(token)
+  #   GithubService.starred_by(token)
+  # end
 
   def starred_repos(token)
     GithubService.starred_by(token)
