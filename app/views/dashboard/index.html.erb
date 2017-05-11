@@ -8,6 +8,7 @@
 <p>Number Following: <%= @user.following(current_user.token).count %></p>
 
 <%= link_to "View Recent Events", events_path %>
+<%= link_to "View Recent Commits", commits_path %>
 <%= link_to "See Followers", followers_path %>
 <%= link_to "See Following", following_index_path %>
 <%= link_to "See Repos", repos_path %>

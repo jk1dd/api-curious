@@ -1,0 +1,5 @@
+<div class="my-commits">
+  <% @commits.each do |commit| %>
+  <p>"<%= commit.message %>" posted in repo "<%= commit.repo %>"</p>
+  <% end %>
+</div>

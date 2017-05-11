@@ -71,6 +71,10 @@ class GithubUser
     Event.events(token, nickname)
   end
 
+  def commits(token, nickname)
+    Event.find_commits(token, nickname)
+  end
+
   private
   attr_reader :attrs
 end

@@ -11,4 +11,5 @@ Rails.application.routes.draw do
   resources :repos, only: [:index]
   resources :following, only: [:index]
   resources :events, only: [:index]
+  resources :commits, only: [:index]
 end

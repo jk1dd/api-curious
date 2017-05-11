@@ -18,18 +18,25 @@ class Event
     attrs[:type]
   end
 
-  # def payload
-  #   attrs[:payload]
-  #   # binding.pry
-  # end
-  #
-  # def repo
-  #   attrs[:repo][:name].split('/')[1]
-  # end
-  #
-  # def push_events(token, nickname)
-  #   Event.events(token, nickname).select {|event| event.type == 'PushEvent'}
-  # end
+  def self.find_commits(token, nickname)
+    push_events(token, nickname).map do |push_event|
+      Commit.commits(push_event.payload, push_event.repo)
+    end
+    # binding.pry
+  end
+
+  def payload
+    attrs[:payload]
+    # binding.pry
+  end
+
+  def repo
+    attrs[:repo][:name].split('/')[1]
+  end
+
+  def self.push_events(token, nickname)
+    Event.events(token, nickname).select {|event| event.type == 'PushEvent'}
+  end
   #
   # def commits(token, nickname)
   #   ere = push_events.map { |push_event| push_event.payload[:commits] }
