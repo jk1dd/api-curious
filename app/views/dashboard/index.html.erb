@@ -5,7 +5,7 @@
 <p>Image: <%= image_tag(current_user.image) %></p>
 <p>Starred Repos Count: <%= @user.starred_repos(current_user.token).count %></p>
 <p>Number of Followers: <%= @user.followers(current_user.token).count %></p>
-<p>Number Following: <%#= @user.following.count %></p>
+<p>Number Following: <%= @user.following(current_user.token).count %></p>
 
 
 <%= link_to "See Followers", followers_path %>
