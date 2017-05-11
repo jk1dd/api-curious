@@ -26,10 +26,11 @@ describe GithubUser do
   it 'returns a users followers' do
     VCR.use_cassette('user_followers') do
       token = ENV['github_user_token']
-      github_user_followers = GithubUser.followers(token)
+      github_user = GithubUser.find(token)
+      followers = github_user.followers(token)
       # binding.pry
-      expect(github_user_followers).to be_an(Array)
-      expect(github_user_followers.count).to eq(5)
+      expect(followers).to be_an(Array)
+      expect(followers.count).to eq(5)
     end
   end
 

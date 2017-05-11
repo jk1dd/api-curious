@@ -34,12 +34,12 @@ class GithubUser
     GithubService.followers(token)
   end
 
-  def self.followers(token)
-    ere = GithubService.new(token).followers.map do |follower|
-      new(follower)
-    end
-    # binding.pry
-  end
+  # def self.followers(token)
+  #   ere = GithubService.new(token).followers.map do |follower|
+  #     new(follower)
+  #   end
+  #   binding.pry
+  # end
 
 
   def self.repos(token)
