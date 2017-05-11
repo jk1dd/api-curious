@@ -53,9 +53,9 @@ class GithubUser
   # end
 
 
-  def self.repos(token)
-    GithubService.find_repos(token)
-  end
+  # def self.repos(token)
+  #   GithubService.find_repos(token)
+  # end
 
   def repos(token)
     Repo.repos(token)

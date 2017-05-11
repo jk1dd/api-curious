@@ -38,10 +38,12 @@ describe GithubUser do
   it 'returns a users repos' do
     VCR.use_cassette('user_repos') do
       token = ENV['github_user_token']
-      github_user_repos = GithubUser.repos(token)
+      github_user = GithubUser.find(token)
+      repos = github_user.repos(token)
       # binding.pry
-      expect(github_user_repos).to be_an(Array)
-      expect(github_user_repos.count).to eq(30)
+      expect(repos).to be_an(Array)
+      expect(repos.first).to be_a(Repo)
+      expect(repos.count).to eq(30)
     end
   end
 end
