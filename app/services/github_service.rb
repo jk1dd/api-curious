@@ -66,6 +66,16 @@ class GithubService
     service.find_events
   end
 
+  def find_organizations(token)
+    response = conn.get("/user/orgs?access_token=#{token}")
+    JSON.parse(response.body, symbolize_names: true)
+  end
+
+  def self.find_organizations(token)
+    service = GithubService.new(token)
+    service.find_organizations(token)
+  end
+
   private
   attr_reader :token
 

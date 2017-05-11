@@ -57,6 +57,10 @@ class GithubUser
     Event.find_commits(token, nickname)
   end
 
+  def organizations(token)
+    Organization.organizations(token)
+  end
+
   private
   attr_reader :attrs
 end
