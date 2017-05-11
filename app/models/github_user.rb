@@ -39,7 +39,7 @@ class GithubUser
   end
 
   def followers(token)
-    abc = GithubService.followers(token).map do |follower|
+    GithubService.followers(token).map do |follower|
       GithubUser.new(follower)
     end
     # binding.pry
@@ -59,6 +59,12 @@ class GithubUser
 
   def repos(token)
     Repo.repos(token)
+  end
+
+  def following(token)
+    GithubService.following(token).map do |following|
+      GithubUser.new(following)
+    end
   end
 
   private

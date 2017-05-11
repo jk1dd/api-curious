@@ -46,4 +46,16 @@ describe GithubUser do
       expect(repos.count).to eq(30)
     end
   end
+
+  it 'returns a users followings' do
+    VCR.use_cassette('user_followings') do
+      token = ENV['github_user_token']
+      github_user = GithubUser.find(token)
+      followings = github_user.following(token)
+      # binding.pry
+      expect(followings).to be_an(Array)
+      expect(followings.first).to be_a(GithubUser)
+      expect(followings.count).to eq(27)
+    end
+  end
 end
