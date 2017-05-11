@@ -1,8 +1,11 @@
 <div class="basic-info">
 
-You've made it <%= current_user.nickname %><br>
-Name: <%= current_user.name %><br>
-Image: <%= image_tag(current_user.image) %>
+<p>You've made it <%= current_user.nickname %></p>
+<p>Name: <%= current_user.name %></p>
+<p>Image: <%= image_tag(current_user.image) %></p>
+<p>Starred Repos Count: <%= @user.starred_repos(current_user.token).count %></p>
+<p>Number of Followers: <%= @user.followers(current_user.token).count %></p>
+<p>Number Following: <%#= @user.following.count %></p>
 
 
 <%= link_to "See Followers", followers_path %>

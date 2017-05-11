@@ -26,9 +26,21 @@ class GithubUser
     GithubService.starred_by(token)
   end
 
-  def self.followers(token)
+  def starred_repos(token)
+    GithubService.starred_by(token)
+  end
+
+  def followers(token)
     GithubService.followers(token)
   end
+
+  def self.followers(token)
+    ere = GithubService.new(token).followers.map do |follower|
+      new(follower)
+    end
+    # binding.pry
+  end
+
 
   def self.repos(token)
     GithubService.find_repos(token)
