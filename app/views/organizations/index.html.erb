@@ -1,0 +1,5 @@
+<div class="orgs-list">
+  <% @organizations.each do |org| %>
+  <p><%= org.try(:name) %></p>
+  <% end %>
+</div>

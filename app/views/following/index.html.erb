@@ -1,0 +1,7 @@
+<div class="following-list">
+  <% @following.each do |person| %>
+  <p><%= person.login %></p>
+  <p><%= image_tag(person.avatar_url) %></p>
+  <p><%= link_to "My Page", person.html_url %></p>
+  <% end %>
+</div>

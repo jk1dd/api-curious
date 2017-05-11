@@ -1,0 +1,22 @@
+<div class="basic-info">
+
+<p>You've made it <%= current_user.nickname %></p>
+<p>Name: <%= current_user.name %></p>
+<p>Image: <%= image_tag(current_user.image) %></p>
+<p>Starred Repos Count: <%= @user.starred_repos(current_user.token).count %></p>
+<p>Number of Followers: <%= @user.followers(current_user.token).count %></p>
+<p>Number Following: <%= @user.following(current_user.token).count %></p>
+<p>Number of Repos: <%= @user.public_repos %></p>
+<p>Number of Organizations: <%= @user.organizations(current_user.token).count %></p>
+
+<%= link_to "View Recent Events", events_path %>
+<%= link_to "View Recent Commits", commits_path %>
+<%= link_to "See Followers", followers_path %>
+<%= link_to "See Following", following_index_path %>
+<%= link_to "See Repos", repos_path %>
+<%= link_to "See Organizations", organizations_path %>
+
+
+
+</div>
+<%= link_to "Logout", logout_path, method: :delete %>
