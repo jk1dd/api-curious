@@ -16,11 +16,6 @@ feature 'User can view recent commits' do
         within(".my-commits") do
           expect(page).to have_content("add current user token to following method in view")
         end
-
-        # within(".their-events") do
-        #   expect(page).to have_content("jwkafjw")
-        # end
-
       end
     end
   end

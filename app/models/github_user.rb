@@ -7,7 +7,6 @@ class GithubUser
 
   def self.find(token)
     new(GithubService.user_by(token))
-    # binding.pry
   end
 
   def name
@@ -30,10 +29,6 @@ class GithubUser
     attrs[:html_url]
   end
 
-  # def self.starred(token)
-  #   GithubService.starred_by(token)
-  # end
-
   def starred_repos(token)
     GithubService.starred_by(token)
   end
@@ -42,20 +37,7 @@ class GithubUser
     GithubService.followers(token).map do |follower|
       GithubUser.new(follower)
     end
-    # binding.pry
   end
-
-  # def self.followers(token)
-  #   ere = GithubService.new(token).followers.map do |follower|
-  #     binding.pry
-  #     new(follower)
-  #   end
-  # end
-
-
-  # def self.repos(token)
-  #   GithubService.find_repos(token)
-  # end
 
   def repos(token)
     Repo.repos(token)

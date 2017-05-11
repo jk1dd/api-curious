@@ -7,10 +7,8 @@ class Commit
   end
 
   def self.commits(payload, repo)
-    # binding.pry
     payload[:commits].map do |raw_commit|
       Commit.new(raw_commit, repo)
-      # binding.pry
     end
   end
 
