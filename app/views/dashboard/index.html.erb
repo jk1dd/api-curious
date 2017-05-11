@@ -6,6 +6,7 @@
 <p>Starred Repos Count: <%= @user.starred_repos(current_user.token).count %></p>
 <p>Number of Followers: <%= @user.followers(current_user.token).count %></p>
 <p>Number Following: <%= @user.following(current_user.token).count %></p>
+<p>Number of Repos: <%= @user.public_repos %></p>
 
 <%= link_to "View Recent Events", events_path %>
 <%= link_to "View Recent Commits", commits_path %>
