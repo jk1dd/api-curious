@@ -8,7 +8,6 @@ class Repo
     GithubService.new(token).find_repos.map do |repo|
       new(repo)
     end
-    # binding.pry
   end
 
   def name

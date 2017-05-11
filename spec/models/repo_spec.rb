@@ -5,7 +5,6 @@ describe Repo do
     VCR.use_cassette('returns_repos') do
       token = ENV['github_user_token']
       github_user = GithubUser.find(token)
-      # binding.pry
       repos = github_user.repos(token)
 
       expect(repos).to be_an(Array)

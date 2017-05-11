@@ -16,11 +16,6 @@ feature 'User can view recent events' do
         within(".my-events") do
           expect(page).to have_content("5849994554")
         end
-
-        # within(".their-events") do
-        #   expect(page).to have_content("jwkafjw")
-        # end
-
       end
     end
   end

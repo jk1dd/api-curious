@@ -3,7 +3,6 @@ require 'rails_helper'
 RSpec.feature 'User can see following' do
   context 'as an existing user with valid creds' do
     scenario 'user is on her following page' do
-      # skip
       VCR.use_cassette('view_following') do
         Capybara.app = ApiCurious::Application
         stub_omniauth
