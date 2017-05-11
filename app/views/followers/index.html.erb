@@ -1,7 +1,7 @@
 <div class="followers-list">
   <% @followers.each do |follower| %>
-  <p><%= follower[:login] %></p>
-  <p><%= image_tag(follower[:avatar_url]) %></p>
-  <p><%= link_to(follower[:html_url]) %></p>
+  <p><%= follower.login %></p>
+  <p><%= image_tag(follower.avatar_url) %></p>
+  <p><%= link_to "My page", follower.html_url %></p>
   <% end %>
 </div>

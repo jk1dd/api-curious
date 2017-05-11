@@ -22,6 +22,14 @@ class GithubUser
     attrs[:public_repos]
   end
 
+  def login
+    attrs[:login]
+  end
+
+  def html_url
+    attrs[:html_url]
+  end
+
   # def self.starred(token)
   #   GithubService.starred_by(token)
   # end
@@ -31,14 +39,17 @@ class GithubUser
   end
 
   def followers(token)
-    GithubService.followers(token)
+    abc = GithubService.followers(token).map do |follower|
+      GithubUser.new(follower)
+    end
+    # binding.pry
   end
 
   # def self.followers(token)
   #   ere = GithubService.new(token).followers.map do |follower|
+  #     binding.pry
   #     new(follower)
   #   end
-  #   binding.pry
   # end
 
 

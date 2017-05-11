@@ -30,6 +30,7 @@ describe GithubUser do
       followers = github_user.followers(token)
       # binding.pry
       expect(followers).to be_an(Array)
+      expect(followers.first).to be_a(GithubUser)
       expect(followers.count).to eq(5)
     end
   end

@@ -6,5 +6,6 @@ class FollowersController < ApplicationController
     # binding.pry
     @user = GithubUser.find(current_user.token)
     @followers = @user.followers(current_user.token)
+    # binding.pry
   end
 end
