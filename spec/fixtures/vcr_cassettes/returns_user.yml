@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - GitHub.com
       Date:
-      - Thu, 11 May 2017 00:21:18 GMT
+      - Thu, 11 May 2017 15:18:19 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -31,9 +31,9 @@ http_interactions:
       X-Ratelimit-Limit:
       - '5000'
       X-Ratelimit-Remaining:
-      - '4924'
+      - '4952'
       X-Ratelimit-Reset:
-      - '1494464685'
+      - '1494518682'
       Cache-Control:
       - private, max-age=60, s-maxage=60
       Vary:
@@ -67,14 +67,14 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Served-By:
-      - 10ea50bffaded85949561216def301f3
+      - 02ea60dfed58b2a09106fafd6ca0c108
       X-Github-Request-Id:
-      - D545:3FF6:4CC7488:5F8CCAD:5913AE7D
+      - DCE8:3FFB:7FF4105:9F60E55:591480BB
     body:
       encoding: ASCII-8BIT
       string: '{"login":"jk1dd","id":20495477,"avatar_url":"https://avatars2.githubusercontent.com/u/20495477?v=3","gravatar_id":"","url":"https://api.github.com/users/jk1dd","html_url":"https://github.com/jk1dd","followers_url":"https://api.github.com/users/jk1dd/followers","following_url":"https://api.github.com/users/jk1dd/following{/other_user}","gists_url":"https://api.github.com/users/jk1dd/gists{/gist_id}","starred_url":"https://api.github.com/users/jk1dd/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/jk1dd/subscriptions","organizations_url":"https://api.github.com/users/jk1dd/orgs","repos_url":"https://api.github.com/users/jk1dd/repos","events_url":"https://api.github.com/users/jk1dd/events{/privacy}","received_events_url":"https://api.github.com/users/jk1dd/received_events","type":"User","site_admin":false,"name":"Jonathan
         Kidd","company":"@turingschool","blog":"","location":"Denver, CO","email":"kidd.jonathan.j@gmail.com","hireable":true,"bio":"Back-End
         Engineering Student at Turing School of Software and Design.","public_repos":34,"public_gists":14,"followers":5,"following":27,"created_at":"2016-07-16T23:05:21Z","updated_at":"2017-05-08T16:39:53Z"}'
     http_version: 
-  recorded_at: Thu, 11 May 2017 00:21:17 GMT
+  recorded_at: Thu, 11 May 2017 15:18:21 GMT
 recorded_with: VCR 3.0.3

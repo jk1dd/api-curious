@@ -67,6 +67,10 @@ class GithubUser
     end
   end
 
+  def events(token, nickname)
+    Event.events(token, nickname)
+  end
+
   private
   attr_reader :attrs
 end

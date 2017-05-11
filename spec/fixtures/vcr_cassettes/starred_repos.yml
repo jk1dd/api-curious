@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - GitHub.com
       Date:
-      - Thu, 11 May 2017 00:26:45 GMT
+      - Thu, 11 May 2017 15:18:19 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -31,9 +31,9 @@ http_interactions:
       X-Ratelimit-Limit:
       - '5000'
       X-Ratelimit-Remaining:
-      - '4908'
+      - '4951'
       X-Ratelimit-Reset:
-      - '1494464685'
+      - '1494518682'
       Cache-Control:
       - private, max-age=60, s-maxage=60
       Vary:
@@ -67,16 +67,16 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Served-By:
-      - 4537b68c46a1b65b106078b0a2578ee2
+      - 0e17b94a265a427d9cafe798ceea7c02
       X-Github-Request-Id:
-      - D585:3FFB:769797E:93B51B1:5913AFC5
+      - DCE9:3FEC:2B3AE8F:35DA314:591480BB
     body:
       encoding: ASCII-8BIT
       string: '{"login":"jk1dd","id":20495477,"avatar_url":"https://avatars2.githubusercontent.com/u/20495477?v=3","gravatar_id":"","url":"https://api.github.com/users/jk1dd","html_url":"https://github.com/jk1dd","followers_url":"https://api.github.com/users/jk1dd/followers","following_url":"https://api.github.com/users/jk1dd/following{/other_user}","gists_url":"https://api.github.com/users/jk1dd/gists{/gist_id}","starred_url":"https://api.github.com/users/jk1dd/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/jk1dd/subscriptions","organizations_url":"https://api.github.com/users/jk1dd/orgs","repos_url":"https://api.github.com/users/jk1dd/repos","events_url":"https://api.github.com/users/jk1dd/events{/privacy}","received_events_url":"https://api.github.com/users/jk1dd/received_events","type":"User","site_admin":false,"name":"Jonathan
         Kidd","company":"@turingschool","blog":"","location":"Denver, CO","email":"kidd.jonathan.j@gmail.com","hireable":true,"bio":"Back-End
         Engineering Student at Turing School of Software and Design.","public_repos":34,"public_gists":14,"followers":5,"following":27,"created_at":"2016-07-16T23:05:21Z","updated_at":"2017-05-08T16:39:53Z"}'
     http_version: 
-  recorded_at: Thu, 11 May 2017 00:26:45 GMT
+  recorded_at: Thu, 11 May 2017 15:18:21 GMT
 - request:
     method: get
     uri: https://api.github.com/user/starred?access_token=<GITHUB_USER_TOKEN>
@@ -98,7 +98,7 @@ http_interactions:
       Server:
       - GitHub.com
       Date:
-      - Thu, 11 May 2017 00:26:45 GMT
+      - Thu, 11 May 2017 15:18:19 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -108,16 +108,16 @@ http_interactions:
       X-Ratelimit-Limit:
       - '5000'
       X-Ratelimit-Remaining:
-      - '4907'
+      - '4950'
       X-Ratelimit-Reset:
-      - '1494464685'
+      - '1494518682'
       Cache-Control:
       - private, max-age=60, s-maxage=60
       Vary:
       - Accept, Authorization, Cookie, X-GitHub-OTP
       - Accept-Encoding
       Etag:
-      - W/"3e9bc1fe923ea06f7a181ed6615daf1c"
+      - W/"46bed1b807d17bc156cc56b7a8018d2e"
       X-Oauth-Scopes:
       - ''
       X-Accepted-Oauth-Scopes:
@@ -142,12 +142,12 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Served-By:
-      - a474937f3b2fa272558fa6dc951018ad
+      - 075bb2f6b7031ca3c0e69edb17939fae
       X-Github-Request-Id:
-      - D586:3FFB:76979B7:93B51FA:5913AFC5
+      - DCEA:3FF6:5308F9E:675ACC7:591480BB
     body:
       encoding: ASCII-8BIT
-      string: '[{"id":90681304,"name":"api-curious","full_name":"jk1dd/api-curious","owner":{"login":"jk1dd","id":20495477,"avatar_url":"https://avatars2.githubusercontent.com/u/20495477?v=3","gravatar_id":"","url":"https://api.github.com/users/jk1dd","html_url":"https://github.com/jk1dd","followers_url":"https://api.github.com/users/jk1dd/followers","following_url":"https://api.github.com/users/jk1dd/following{/other_user}","gists_url":"https://api.github.com/users/jk1dd/gists{/gist_id}","starred_url":"https://api.github.com/users/jk1dd/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/jk1dd/subscriptions","organizations_url":"https://api.github.com/users/jk1dd/orgs","repos_url":"https://api.github.com/users/jk1dd/repos","events_url":"https://api.github.com/users/jk1dd/events{/privacy}","received_events_url":"https://api.github.com/users/jk1dd/received_events","type":"User","site_admin":false},"private":false,"html_url":"https://github.com/jk1dd/api-curious","description":null,"fork":false,"url":"https://api.github.com/repos/jk1dd/api-curious","forks_url":"https://api.github.com/repos/jk1dd/api-curious/forks","keys_url":"https://api.github.com/repos/jk1dd/api-curious/keys{/key_id}","collaborators_url":"https://api.github.com/repos/jk1dd/api-curious/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/jk1dd/api-curious/teams","hooks_url":"https://api.github.com/repos/jk1dd/api-curious/hooks","issue_events_url":"https://api.github.com/repos/jk1dd/api-curious/issues/events{/number}","events_url":"https://api.github.com/repos/jk1dd/api-curious/events","assignees_url":"https://api.github.com/repos/jk1dd/api-curious/assignees{/user}","branches_url":"https://api.github.com/repos/jk1dd/api-curious/branches{/branch}","tags_url":"https://api.github.com/repos/jk1dd/api-curious/tags","blobs_url":"https://api.github.com/repos/jk1dd/api-curious/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/jk1dd/api-curious/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/jk1dd/api-curious/git/refs{/sha}","trees_url":"https://api.github.com/repos/jk1dd/api-curious/git/trees{/sha}","statuses_url":"https://api.github.com/repos/jk1dd/api-curious/statuses/{sha}","languages_url":"https://api.github.com/repos/jk1dd/api-curious/languages","stargazers_url":"https://api.github.com/repos/jk1dd/api-curious/stargazers","contributors_url":"https://api.github.com/repos/jk1dd/api-curious/contributors","subscribers_url":"https://api.github.com/repos/jk1dd/api-curious/subscribers","subscription_url":"https://api.github.com/repos/jk1dd/api-curious/subscription","commits_url":"https://api.github.com/repos/jk1dd/api-curious/commits{/sha}","git_commits_url":"https://api.github.com/repos/jk1dd/api-curious/git/commits{/sha}","comments_url":"https://api.github.com/repos/jk1dd/api-curious/comments{/number}","issue_comment_url":"https://api.github.com/repos/jk1dd/api-curious/issues/comments{/number}","contents_url":"https://api.github.com/repos/jk1dd/api-curious/contents/{+path}","compare_url":"https://api.github.com/repos/jk1dd/api-curious/compare/{base}...{head}","merges_url":"https://api.github.com/repos/jk1dd/api-curious/merges","archive_url":"https://api.github.com/repos/jk1dd/api-curious/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/jk1dd/api-curious/downloads","issues_url":"https://api.github.com/repos/jk1dd/api-curious/issues{/number}","pulls_url":"https://api.github.com/repos/jk1dd/api-curious/pulls{/number}","milestones_url":"https://api.github.com/repos/jk1dd/api-curious/milestones{/number}","notifications_url":"https://api.github.com/repos/jk1dd/api-curious/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/jk1dd/api-curious/labels{/name}","releases_url":"https://api.github.com/repos/jk1dd/api-curious/releases{/id}","deployments_url":"https://api.github.com/repos/jk1dd/api-curious/deployments","created_at":"2017-05-08T23:25:54Z","updated_at":"2017-05-10T01:10:46Z","pushed_at":"2017-05-11T00:23:18Z","git_url":"git://github.com/jk1dd/api-curious.git","ssh_url":"git@github.com:jk1dd/api-curious.git","clone_url":"https://github.com/jk1dd/api-curious.git","svn_url":"https://github.com/jk1dd/api-curious","homepage":null,"size":69,"stargazers_count":1,"watchers_count":1,"language":null,"has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":0,"mirror_url":null,"open_issues_count":1,"forks":0,"open_issues":1,"watchers":1,"default_branch":"master","permissions":{"admin":true,"push":true,"pull":true}}]'
+      string: '[{"id":90681304,"name":"api-curious","full_name":"jk1dd/api-curious","owner":{"login":"jk1dd","id":20495477,"avatar_url":"https://avatars2.githubusercontent.com/u/20495477?v=3","gravatar_id":"","url":"https://api.github.com/users/jk1dd","html_url":"https://github.com/jk1dd","followers_url":"https://api.github.com/users/jk1dd/followers","following_url":"https://api.github.com/users/jk1dd/following{/other_user}","gists_url":"https://api.github.com/users/jk1dd/gists{/gist_id}","starred_url":"https://api.github.com/users/jk1dd/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/jk1dd/subscriptions","organizations_url":"https://api.github.com/users/jk1dd/orgs","repos_url":"https://api.github.com/users/jk1dd/repos","events_url":"https://api.github.com/users/jk1dd/events{/privacy}","received_events_url":"https://api.github.com/users/jk1dd/received_events","type":"User","site_admin":false},"private":false,"html_url":"https://github.com/jk1dd/api-curious","description":null,"fork":false,"url":"https://api.github.com/repos/jk1dd/api-curious","forks_url":"https://api.github.com/repos/jk1dd/api-curious/forks","keys_url":"https://api.github.com/repos/jk1dd/api-curious/keys{/key_id}","collaborators_url":"https://api.github.com/repos/jk1dd/api-curious/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/jk1dd/api-curious/teams","hooks_url":"https://api.github.com/repos/jk1dd/api-curious/hooks","issue_events_url":"https://api.github.com/repos/jk1dd/api-curious/issues/events{/number}","events_url":"https://api.github.com/repos/jk1dd/api-curious/events","assignees_url":"https://api.github.com/repos/jk1dd/api-curious/assignees{/user}","branches_url":"https://api.github.com/repos/jk1dd/api-curious/branches{/branch}","tags_url":"https://api.github.com/repos/jk1dd/api-curious/tags","blobs_url":"https://api.github.com/repos/jk1dd/api-curious/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/jk1dd/api-curious/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/jk1dd/api-curious/git/refs{/sha}","trees_url":"https://api.github.com/repos/jk1dd/api-curious/git/trees{/sha}","statuses_url":"https://api.github.com/repos/jk1dd/api-curious/statuses/{sha}","languages_url":"https://api.github.com/repos/jk1dd/api-curious/languages","stargazers_url":"https://api.github.com/repos/jk1dd/api-curious/stargazers","contributors_url":"https://api.github.com/repos/jk1dd/api-curious/contributors","subscribers_url":"https://api.github.com/repos/jk1dd/api-curious/subscribers","subscription_url":"https://api.github.com/repos/jk1dd/api-curious/subscription","commits_url":"https://api.github.com/repos/jk1dd/api-curious/commits{/sha}","git_commits_url":"https://api.github.com/repos/jk1dd/api-curious/git/commits{/sha}","comments_url":"https://api.github.com/repos/jk1dd/api-curious/comments{/number}","issue_comment_url":"https://api.github.com/repos/jk1dd/api-curious/issues/comments{/number}","contents_url":"https://api.github.com/repos/jk1dd/api-curious/contents/{+path}","compare_url":"https://api.github.com/repos/jk1dd/api-curious/compare/{base}...{head}","merges_url":"https://api.github.com/repos/jk1dd/api-curious/merges","archive_url":"https://api.github.com/repos/jk1dd/api-curious/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/jk1dd/api-curious/downloads","issues_url":"https://api.github.com/repos/jk1dd/api-curious/issues{/number}","pulls_url":"https://api.github.com/repos/jk1dd/api-curious/pulls{/number}","milestones_url":"https://api.github.com/repos/jk1dd/api-curious/milestones{/number}","notifications_url":"https://api.github.com/repos/jk1dd/api-curious/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/jk1dd/api-curious/labels{/name}","releases_url":"https://api.github.com/repos/jk1dd/api-curious/releases{/id}","deployments_url":"https://api.github.com/repos/jk1dd/api-curious/deployments","created_at":"2017-05-08T23:25:54Z","updated_at":"2017-05-10T01:10:46Z","pushed_at":"2017-05-11T02:26:25Z","git_url":"git://github.com/jk1dd/api-curious.git","ssh_url":"git@github.com:jk1dd/api-curious.git","clone_url":"https://github.com/jk1dd/api-curious.git","svn_url":"https://github.com/jk1dd/api-curious","homepage":null,"size":139,"stargazers_count":1,"watchers_count":1,"language":null,"has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":0,"mirror_url":null,"open_issues_count":1,"forks":0,"open_issues":1,"watchers":1,"default_branch":"master","permissions":{"admin":true,"push":true,"pull":true}}]'
     http_version: 
-  recorded_at: Thu, 11 May 2017 00:26:45 GMT
+  recorded_at: Thu, 11 May 2017 15:18:22 GMT
 recorded_with: VCR 3.0.3

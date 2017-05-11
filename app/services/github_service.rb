@@ -56,6 +56,16 @@ class GithubService
     service.following
   end
 
+  def find_events(nickname)
+    response = conn.get("/users/#{nickname}/events?access_token=#{token}")
+    JSON.parse(response.body, symbolize_names: true)
+  end
+
+  def self.find_events(token)
+    service = GithubService.new(token)
+    service.find_events
+  end
+
   private
   attr_reader :token
 

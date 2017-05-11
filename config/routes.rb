@@ -10,4 +10,5 @@ Rails.application.routes.draw do
   resources :followers, only: [:index]
   resources :repos, only: [:index]
   resources :following, only: [:index]
+  resources :events, only: [:index]
 end
