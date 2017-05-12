@@ -1,4 +1,4 @@
-<div class="repos-list">
+<div class="repos-list container">
   <% @repos.each do |repo| %>
   <p><%= repo.name %></p>
   <p><%= link_to "See Repo", "#{repo.html_url}" %></p>

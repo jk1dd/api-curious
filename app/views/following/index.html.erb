@@ -1,4 +1,4 @@
-<div class="following-list">
+<div class="following-list container center-align">
   <% @following.each do |person| %>
   <p><%= person.login %></p>
   <p><%= image_tag(person.avatar_url) %></p>

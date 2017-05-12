@@ -1,4 +1,4 @@
-<div class="followers-list">
+<div class="followers-list container center-align">
   <% @followers.each do |follower| %>
   <p><%= follower.login %></p>
   <p><%= image_tag(follower.avatar_url) %></p>
